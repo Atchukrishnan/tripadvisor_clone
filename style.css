@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+}
+/* tripadvisor logo */
+.navbar__s1 {
+    cursor: pointer;
+    padding-left: 20px;
+}
+.navbar__s1 img {
+    height: 50px;
+    width: 200px;
+}
+/* Navbar links */
+.navbar__s2 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;  
+}
+.navbar__s2 h4{
+    padding: 10px;
+}
+.navbar__s2 h4:hover{
+    background-color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+.navbar__s2 .forum:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* Country & Signin */
+.navbar__s3 {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;   
+}
+.navbar__s3 button {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.navbar__s3 .globe {
+    display: flex;
+    gap: 5px;
+    padding: 12px;
+}
+.navbar__s3 .globe:hover{
+    background-color: #E0E0E0;
+    border-radius: 20px;
+    padding: 12px;
+}
+.navbar__s3 .grey-separator{
+    color: #E0E0E0;
+    font-weight: normal;
+    font-size: 16px;
+}
+.navbar__s3 .signin {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.navbar__s3 .signin:hover{
+    opacity: 0.7;
+}
+.Searchbox{
+    
+}
