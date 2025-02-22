@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 body {
@@ -17,9 +17,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2px;
     padding: 5px;
+    background-color: white;
+    height: 80px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    
 }
+
 
 /* tripadvisor logo */
 .navbar__s1 {
@@ -49,7 +55,6 @@ body {
     background-color: lightgrey;
     border-radius: 20px;
     padding: 10px;
-
 }
 
 .navbar__s2 .forum:hover {
@@ -119,6 +124,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    height: 200px;
 }
 
 /* searchbar-heading */
@@ -172,7 +179,8 @@ body {
     display: flex;
     gap: 10px;
 }
-.searchbar__input img{
+
+.searchbar__input img {
     cursor: pointer;
 }
 
@@ -181,9 +189,11 @@ body {
     border: none;
     font-size: 16px;
 }
-.searchbar__input input:focus{
+
+.searchbar__input input:focus {
     outline: none;
 }
+
 .searchbar button {
     border: none;
     background-color: #34E0A1;
@@ -193,18 +203,362 @@ body {
     border-radius: 30px;
     cursor: pointer;
 }
-.searchbar button:hover{
+
+.searchbar button:hover {
     opacity: 0.6;
 }
+
 /* Poster */
-.poster{
+.poster {
+    margin: 2px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* poster img */
+.poster img {
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+/* poster card */
+.poster__card {
+    width: 400px;
+    position: absolute;
+    padding: 20px;
+    margin: 10px;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    text-align: left;
+}
+
+.poster__card__s1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.poster__card__s1 button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.poster__card__s2 {
+    margin: 2px;
+    padding: 5px;
+    font-size: x-large;
+}
+
+.poster__card__s3 button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+}
+.poster__card__s3 button:hover{
+    opacity: 0.8;
+
+}
+/* Places */
+.places {
+    margin: 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+/* Places heading */
+.places__heading {
     margin: 10px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* places cards */
+.places__card {
+    margin-top: 2px;
+    margin-left: 10px;
+    padding-left: 20px;
+    display: flex;
+    gap: 25px;
+}
+.places__card img {
+    width: 280px;
+    border-radius: 10px;
+}
+.places__card__1,
+.places__card__2,
+.places__card__3,
+.places__card__4 {
+    position: relative;
+    cursor: pointer;
+}
+/* place-card text background */
+.places__card span {
+    position: absolute;
+    padding: 10px;
+    bottom: 8px;
+    left: 16px;
+    font-size: 32px;
+    color: white;
+    font-weight: 900;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+.places__card span:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Guides */
+.guides {
+    margin: 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+/* guides heading */
+.guides__heading {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/* guides Cards */
+.guides__cards{
+    margin-top: 2px;
+    margin-left: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;  
+}
+/* guides card img */
+.guides__cards img{
+    width: 380px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+.guides__cards img:hover{
+    opacity: 0.8;
+}
+/* guides cards details */
+.guides__cards .details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.guides__cards .details h3:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.guides__cards .details h4:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+/* More-to-explore */
+.more-to-explore{
+    margin: 2px;
+    padding: 5px;
+    background-color: #F2F1EC;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+/* More-to-explore-heading */
+.more-to-explore h2{
+    margin: 10px;
+    padding: 20px;
+}
+/* More-to-explore Image container */
+.explore__container{
+    display: flex;
+    gap: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.explore__container img{
+    width: 100%;
+    border-radius: 10px;
+}
+.explore__container img:hover{
+    opacity: 0.7;
+}
+.explore__img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore__img h3:hover{
+   opacity: 0.5;
+   text-decoration: underline;
+}
+/* award_card */
+.award-card{
+    padding-top: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+/* award image */
+.award-card__img{
+    width: 100%;
+    
+}
+.award-card__img img{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+/* award image content */
+.award-card__content{
+    padding-top: 100px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    justify-content: flex-start;
+    align-items: left;
+    font-size: xx-large;
+
+}
+.award-card__content button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: large;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    
+}
+.award-card__content button:hover{
+    opacity: 0.7;
+
+}
+/* footer */
+.footer{
+    padding: 30px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+/* Footer links */
+.footer__s1{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.footer__s1 div p,span{
+    padding: 5px;
+}
+.footer__s1 div p{
+    cursor: pointer;
+}
+.footer__s1 div p:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+/* Footer logo */
+.footer__s2{
+    display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding: 10px;
+}
+.footer__s2__logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footer__s2__links{
+    display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     
 }
-.poster img{
-    border-radius: 10px;
+.footer__s2__links p{
+    cursor: pointer;
 }
+.footer__s2__links p:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+}
+/* Currency */
+.footer__s3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+   
+}
+.footer__s3 select{
+    border-radius: 30px;
+    padding: 5px;
+    border: 1px gray solid;
+}
+.footer__s3 select:hover{
+    border: solid black 1px;
+}
+/* App Logo */
+.footer__s4{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.footer__s4 img{
+    width: 30px;
+}
+
+
+
+
+
